@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TasksBridge – Privacy</title>
+<style>
+  :root { --bg: #f5f5f7; --fg: #1d1d1f; --muted: #6e6e73; --card: #fff; --accent: #0071e3; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111; --fg: #f5f5f7; --muted: #a1a1a6; --card: #1d1d1f; --accent: #2997ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 16px; }
+  .card { background: var(--card); border-radius: 18px; padding: 28px; }
+  h1 { margin: 0 0 4px; font-size: 30px; }
+  h2 { font-size: 19px; margin: 28px 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 8px; }
+  a { color: var(--accent); }
+  li { margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>Informativa sulla privacy</h1>
+    <p class="sub">TasksBridge · aggiornata il 16 novembre 2026</p>
+
+    <h2>Cos'è TasksBridge</h2>
+    <p>TasksBridge è un'app per macOS creata per uso personale. Copia i task di Google Tasks nell'app Promemoria di Apple sullo stesso Mac.</p>
+
+    <h2>Quali dati usa</h2>
+    <p>Con il permesso dell'utente, l'app accede a Google Tasks (ambito <code>https://www.googleapis.com/auth/tasks</code>) per:</p>
+    <ul>
+      <li>leggere le liste e i task (titolo, note, data, stato di completamento);</li>
+      <li>segnare un task come completato o da fare quando l'utente lo spunta in Promemoria.</li>
+    </ul>
+    <p>L'app non legge altri dati dell'account Google e non modifica nient'altro.</p>
+
+    <h2>Dove finiscono i dati</h2>
+    <ul>
+      <li>I task vengono scritti solo nell'app Promemoria dell'utente (e quindi nel suo account iCloud, se Promemoria è sincronizzato con iCloud).</li>
+      <li>Il token di accesso a Google è salvato nel Portachiavi del Mac.</li>
+      <li>L'app non ha server, non raccoglie statistiche, non usa pubblicità e non condivide né vende dati a terzi.</li>
+    </ul>
+
+    <h2>Uso limitato dei dati Google</h2>
+    <p>L'uso delle informazioni ricevute dalle API di Google rispetta le <a href="https://developers.google.com/terms/api-services-user-data-policy">Norme sui dati utente dei servizi API di Google</a>, compresi i requisiti di uso limitato.</p>
+
+    <h2>Revocare l'accesso</h2>
+    <p>Puoi disconnettere l'account dalle impostazioni dell'app, oppure revocare l'accesso in qualsiasi momento da <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Le liste create in Promemoria si possono cancellare direttamente dall'app Promemoria.</p>
+
+    <h2>Contatti</h2>
+    <p>Per domande puoi aprire una segnalazione nel <a href="https://github.com/LK024/tasksbridge/issues">repository del progetto</a>.</p>
+
+    <p><a href="./">← TasksBridge</a></p>
+  </div>
+</main>
+</body>
+</html>
